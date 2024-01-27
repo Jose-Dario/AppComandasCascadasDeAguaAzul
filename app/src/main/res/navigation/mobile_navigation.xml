@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.cascadas.MesasFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_mesas2" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.cascadas.ComandasFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_comandas" />
+
+    <fragment
+        android:id="@+id/navigation_avisos"
+        android:name="com.example.cascadas.AvisosFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_avisos" />
+
+    <fragment
+        android:id="@+id/nav_cortes"
+        android:name="com.example.cascadas.encargado.CortesFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_cortes" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.cascadas.PerfilFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/nav_cambiar_contrasenia"
+        android:name="com.example.cascadas.CambiarPasswordFragment"
+        android:label=""
+        tools:layout="@layout/fragment_cambiar_password" />
+    <fragment
+        android:id="@+id/nav_configurar_mesa"
+        android:name="com.example.cascadas.ConfigurarMesaFragment"
+        android:label=""
+        tools:layout="@layout/fragment_configurar_mesa" />
+    <fragment
+        android:id="@+id/nav_detalle_mesa"
+        android:name="com.example.cascadas.MesaDetalleFragment"
+        android:label=""
+        tools:layout="@layout/fragment_mesa_detalle" />
+    <fragment
+        android:id="@+id/nav_detalle_cuenta"
+        android:name="com.example.cascadas.DetalleCuentaFragment"
+        android:label=""
+        tools:layout="@layout/fragment_detalle_cuenta" />
+    <fragment
+        android:id="@+id/nav_add_cuenta"
+        android:name="com.example.cascadas.AddCuentaFragment"
+        android:label=""
+        tools:layout="@layout/fragment_add_cuenta" />
+    <fragment
+        android:id="@+id/nav_add_orden"
+        android:name="com.example.cascadas.GenerarOrdenFragment"
+        android:label=""
+        tools:layout="@layout/fragment_generar_orden" />
+
+</navigation>
