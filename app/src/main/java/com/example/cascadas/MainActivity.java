@@ -149,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case "Cocinero":
                 case "Barman":
-                case "Comalero":
+                case "Cocinero Aux":
                     Intent intentCocinero = new Intent(this, MainArea.class);
                     intentCocinero.putExtra("nombre", nombre);
                     intentCocinero.putExtra("correo", correo);
